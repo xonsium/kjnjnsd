@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyInsta - Home</title>
+    <style>
+        @font-face {
+            font-family: "generatePress";
+            src: url(https://files.catbox.moe/u25xb0.woff2);
+        }
+
+        body {
+            font-family: "generatePress", sans-serif;
+        }
+        .navigation-branding img, .site-logo.mobile-header-logo img {
+            height: 60px;
+            width: auto;
+        }
+        .main-sec {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h2.gb-headline-1d2bf5d5 {
+            font-size: 60px;
+            font-weight: 700;
+        }
+
+        p {
+            display: block;
+            margin-block-start: 1em;
+            margin-block-end: 1em;
+            unicode-bidi: isolate;
+        }
+
+        .gb-button-wrapper a.gb-button-33782d3a,
+        .gb-button-wrapper a.gb-button-33782d3a:visited {
+            background-color: #0366d6;
+            width: 100%;
+            color: white;
+            padding: 15px 32px;
+            border-radius: 6px;
+            text-align: center;
+            text-decoration: none;
+        }
+
+        .gb-image {
+            margin-top: 50px;
+            width: 100%;
+            height: auto;
+        }
+
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 20px;
+            padding-bottom: 50px;
+        }
+
+        .nav-link {
+            padding-left: 15px;
+            text-decoration: none;
+            color: rgb(42, 42, 42);
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="nav">
+        <div>
+            <div class="navigation-branding"><div class="">
+						<a href="https://myinsta.app/" title="MyInsta" rel="home">
+							<img class="" alt="MyInsta" src="https://myinsta.app/wp-content/uploads/2023/11/myinsta-icon-white.webp" title="MyInsta" srcset="https://myinsta.app/wp-content/uploads/2023/11/myinsta-icon-white.webp 1x, https://myinsta.app/wp-content/uploads/2023/11/myinsta-icon-white.webp 2x" width="512" height="512">
+						</a>
+					</div></div>
+        </div>
+        <div>
+            <a class="nav-link" href="#">Changelog</a>
+            <a class="nav-link" href="#">FAQ</a>
+            <a class="nav-link" href="#">About</a>
+            <a class="nav-link" href="#">Contact</a>
+        </div>
+    </nav>
+
+    <section class="main-sec">
+        <h2 class="gb-headline gb-headline-1d2bf5d5 gb-headline-text">MyInsta</h2>
+        <p>MyInsta is an InstaMod that allows users to have exclusive features such as downloading Reels, Videos,
+            Photos,
+            and No Ads.</p>
+        <div class="gb-grid-wrapper gb-grid-wrapper-de64cc56" style="margin-top: 40px;">
+            <div class="gb-grid-column gb-grid-column-ae2bf486">
+                <div class="gb-container gb-container-ae2bf486">
+                    <div class="gb-inside-container">
+                        <div class="gb-button-wrapper gb-button-wrapper-2ca9c2c9">
+                            <a class="gb-button gb-button-33782d3a"
+                                href="{{ url_for('register') }}">
+                                <span class="gb-button-text">REGISTER YOUR ACCOUNT FOR MOD</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="gb-grid-column gb-grid-column-cf01171c">
+                <div class="gb-container gb-container-cf01171c">
+                    <div class="gb-inside-container">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <img fetchpriority="high" decoding="async" width="900" height="541" class="gb-image"
+        src="https://myinsta.app/wp-content/uploads/2023/11/myinsta-screenshots.webp" alt="myinsta screenshots"
+        title="myinsta screenshots" sizes="(max-width: 900px) 100vw, 900px">
+
+</body>
+
+</html>

